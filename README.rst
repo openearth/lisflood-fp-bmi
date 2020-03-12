@@ -12,9 +12,10 @@ This specific version of LISFLOO-FP is BMI-compatible and allows for accessing m
 
 .. _University of Bristol: http://www.bristol.ac.uk/geography/research/hydrology/models/lisflood/
 
-.. note:: The here available LISFLOOD-FP model is based on version 5.9. This is, however, not the most up-to-date version. In case you are interested in using the BMI functionality,
-or just in a open-source version of the model, this repositry may be suited for you. Otherwise, please consider contacting the `University of Bristol`_ if the here provided 
-functionalities do not meet your requirements.
+Note
+    The here available LISFLOOD-FP model is based on version 5.9. This is, however, not the most up-to-date version. In case you are interested in using the BMI functionality,
+    or just in a open-source version of the model, this repositry may be suited for you. Otherwise, please consider contacting the `University of Bristol`_ if the here provided 
+    functionalities do not meet your requirements.
 
 Basic Model Interface (BMI) 
 ---------------------------
@@ -27,8 +28,9 @@ For further information regarding the (technological) background of the BMI_, we
 
 .. _BMI: https://bmi.readthedocs.io/en/latest/
 
-.. note:: The implementatoin of the BMI was done using version 1.0. The current version of the BMI is however 2.0. As this major upgrade came with some changes in the code structure, 
-the here available model is not compatible with BMI 2.0.
+Note
+    The implementatoin of the BMI was done using version 1.0. The current version of the BMI is however 2.0. As this major upgrade came with some changes in the code structure, 
+    the here available model is not compatible with BMI 2.0.
 
 Compilation and usage
 ---------------------
@@ -43,7 +45,8 @@ The ``liblisflood.so`` can be used to run LISFLOOD-FP with BMI, for example from
 
 The ``lisflood_lin`` executable can be used to run the model from command line with ``./lisflood_lin [-v] model.par`` where ``model.par`` is your LISFLOOD-FP parameter file.
 
-.. note:: To run the model with the executable, shared object and the executable must be in the same directory as the model.par and all associated files.
+Note
+    To run the model with the executable, shared object and the executable must be in the same directory as the model.par and all associated files.
 
 License
 -------
