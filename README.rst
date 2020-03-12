@@ -1,7 +1,7 @@
 LISFLOOD-FP with BMI
 ====================
 
-This repository contains the LISFLOOD-FP model (version 5.9) with *Basic Model Interface (BMI)* functionality included.
+This repository contains the **LISFLOOD-FP model (version 5.9)** with **Basic Model Interface (BMI)** functionality included.
 
 LISFLOOD-FP 
 -----------
@@ -20,12 +20,12 @@ Basic Model Interface (BMI)
 ---------------------------
 
 By means of the BMI_, it is possible to initiate and finalize a LISFLOOD-FP model as well as to get and set variable values during model execution. As such, running LISFLOOD-FP 
-using BMI commands allows for a more inter-active modelling approach and online-coupling with other models such as for instance in GLOFRIM_.
+using BMI commands allows for a more inter-active modelling approach and online-coupling with other models such as for instance in `GLOFRIM
+<https://www.nat-hazards-earth-syst-sci.net/19/1723/2019/>`_.
+
 For further information regarding the (technological) background of the BMI_, we refer to the mentioned resources.
 
 .. _BMI: https://bmi.readthedocs.io/en/latest/
-
-.. _GLOFRIM: https://www.nat-hazards-earth-syst-sci.net/19/1723/2019/
 
 .. note:: The implementatoin of the BMI was done using version 1.0. The current version of the BMI is however 2.0. As this major upgrade came with some changes in the code structure, 
 the here available model is not compatible with BMI 2.0.
@@ -33,8 +33,9 @@ the here available model is not compatible with BMI 2.0.
 Compilation and usage
 ---------------------
 
-.. note:: The code was compiled, tested, and run on Linux systems only. There is currently no support for Windows. The dependencies of the code are minimal are minimal
-and should work on most systems, also HPC environments. No testing was performed however on Ubuntu with version > 18.04.
+Note
+    The code was compiled, tested, and run on Linux systems only. There is currently no support for Windows. The dependencies of the code are minimal are minimal
+    and should work on most systems, also HPC environments. No testing was performed however on Ubuntu with version > 18.04.
 
 After cloning the code, the model can be compiled with ``make``.
 
