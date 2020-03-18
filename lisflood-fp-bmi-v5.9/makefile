@@ -87,9 +87,9 @@ omp = 1
 # Top-level rule to compile everything
 all: $(EXE)
 
-ifeq ($(omp)$,0)
+ifeq ($(omp),0)
 # Linkage rule
-$(EXE): $(MAINOBJS) # $(LIB)
+$(EXE): $(MAINOBJS)  $(LIB)
 	$(LD) $(LDFLAGS) $(MAINOBJS) -L. -llisflood -o $(EXE)
 
 $(LIB): $(LIBOBJS)
@@ -99,10 +99,10 @@ $(MAINOBJS) $(LIBOBJS): %.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
 endif
 
-ifeq ($(omp)$,1)
+ifeq ($(omp),1)
 # Linkage rule
 $(EXE): $(MAINOBJS)  $(LIB)
-	$(LDIN) $(OMPLDFLAGS) $(MAINOBJS) -L . -llisflood -o $(EXE)
+	$(LDIN) $(OMPLDFLAGS) $(MAINOBJS) $(LIBOBJS) -L . -llisflood -o $(EXE)
 
 $(LIB): $(LIBOBJS)
 	$(LD) $(OMPLDFLAGS) $(LIBOBJS) -fPIC -shared -o $(LIB)

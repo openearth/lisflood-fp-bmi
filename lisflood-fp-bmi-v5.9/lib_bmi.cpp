@@ -348,8 +348,9 @@ void _log(Level level, std::string msg) {
 }
 
 // placeholder function, all dll's need a main.. in windows only
-#if defined _WIN32
+/*#if defined _WIN32
 void main()
 {
 }
 #endif
+*/
