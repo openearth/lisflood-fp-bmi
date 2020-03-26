@@ -77,7 +77,7 @@ LIBOBJS = pars.o \
 
 # ************************************************************
 # Program executable filename
-EXE = lisflood_lin
+EXE = lisflood
 LIB = liblisflood.so
 
 # ************************************************************
