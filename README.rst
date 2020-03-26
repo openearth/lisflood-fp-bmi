@@ -51,14 +51,17 @@ Windows
 
 The model can be compiled with ``mingw32-make``.
 
+If you want to redistribute the .exe and .dll, please make sure to include the following .dll files from the mingw-w64 bin folder (see above).
+    * libgcc_s_seh-1.dll
+    * libgomp-1.dll
+    * libstdc++-6.dll
+
 Running models
     In case you are running linux, the library ``liblisflood.so`` can be used to run LISFLOOD-FP with BMI, for example from within a Python script.
 
-    In case you are running windows, the library ``liblisflood.dll`` can be used to run LISFLOOD-FP with BMI, for example from within a Python script.
+    In case you are running windows, the library ``lisflood.dll`` can be used to run LISFLOOD-FP with BMI, for example from within a Python script.
 
-    In Linux the ``lisflood_lin`` executable can be used to run the model from command line with ``./lisflood_lin [-v] model.par`` where ``model.par`` is your LISFLOOD-FP parameter file.
-
-    In Windows the ``lisflood_lin.exe`` executable can be used to run the model from command line with ``lisflood_lin.exe [-v] model.par`` where ``model.par`` is your LISFLOOD-FP parameter file.
+    The ``lisflood.exe`` (Windows) or ``lisflood`` (Linux) executable can be used to run the model from command line with ``lisflood [-v] model.par`` where ``model.par`` is your LISFLOOD-FP parameter file.
 
     To run the model with the executable, shared object and the executable must be in the same directory as the model.par and all associated files.
 
