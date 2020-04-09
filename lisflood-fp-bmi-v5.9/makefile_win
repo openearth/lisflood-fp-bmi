@@ -77,8 +77,8 @@ LIBOBJS = pars.o \
 
 # ************************************************************
 # Program executable filename
-EXE = lisflood
-LIB = liblisflood.so
+EXE = lisflood.exe
+LIB = lisflood.dll
 
 # ************************************************************
 # Openmp switch (if=0 then scalar; if=1 then openmp)
