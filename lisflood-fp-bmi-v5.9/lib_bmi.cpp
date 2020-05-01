@@ -261,11 +261,7 @@ extern "C" {
     case SGCwidth:
     case SGCQin:
     case SGCz:
-    case Qx:
-    case Qy:
     case rain:
-    case QxSGold:
-    case QySGold:
     //case FArea:
     {
       // TODO: check/fortran/c memory
@@ -273,6 +269,22 @@ extern "C" {
       shape[0] = Parptr->ysz;
       break;
     }
+    case Qx:
+    case QxSGold:
+    {
+      shape[1] = Parptr->xsz+1;
+      shape[0] = Parptr->ysz+1;
+      break;
+    }
+    case Qy:
+    case QySGold:
+    {
+      shape[1] = Parptr->xsz+1;
+      shape[0] = Parptr->ysz+1;
+      break;
+    }
+
+
     case BC_xpi:
     case BC_ypi:
     {
