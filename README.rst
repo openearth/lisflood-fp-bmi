@@ -8,14 +8,14 @@ LISFLOOD-FP
 
 LISFLOOD-FP is a hydrodynamic model developed at the `University of Bristol`_. It solves the local inertia equation to simulate
 overland water flow using a regular grid.
-This specific version of LISFLOO-FP is BMI-compatible and allows for accessing model information during execution. The 
+This specific version of LISFLOO-FP is BMI-compatible and allows for accessing model information during execution. 
 
 .. _University of Bristol: http://www.bristol.ac.uk/geography/research/hydrology/models/lisflood/
 
 Note
     The here available LISFLOOD-FP model is based on version 5.9. This is, however, not the most up-to-date version. In case you are interested in using the BMI functionality,
     or just in a open-source version of the model, this repositry may be suited for you. Otherwise, please consider contacting the `University of Bristol`_ if the here provided 
-    functionalities do not meet your requirements.
+    functionalities do not meet your requirements. For LISFLOOD-FP related issues please contact `University of Bristol`_, for BMI related questions you can leave an issue here.
 
 Basic Model Interface (BMI) 
 ---------------------------
